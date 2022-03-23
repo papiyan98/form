@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <base href="form">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="form">
+      <form action="#" name="testForm" id="form" class="form-body">
+        <h1 class="form-title">Form Title</h1>
+        <div class="form-item">
+          <label for="formName" class="form-label">Name*:</label>
+          <input type="text" name="text" class="form-input _req _name" id="formName" placeholder="Enter your name" />
+        </div>
+        <div class="form-item">
+          <label for="formMail" class="form-label">Email*:</label>
+          <input type="email" name="email" class="form-input _req _email" id="formMail" placeholder="sophy@example.com" />
+        </div>
+        <div class="form-item">
+          <label for="formUrl" class="form-label">URL:</label>
+          <input type="url" name="url" class="form-input" id="formUrl" placeholder="https://example.com" />
+        </div>
+        <div class="form-item">
+          <label for="formMessage" class="form-label">Message*:</label>
+          <textarea class="form-input _req" name="message" id="formMessage" placeholder="Write your message..."></textarea>
+        </div>
+        <div class="form-item">
+          <div class="form-label">Attach photo:</div>
+            <div class="file-item">
+              <input accept=".jpg, .png, .gif" type="file" name="file" class="file-input" id="formFile"/>
+              <label for="formFile" class="file-button">Select</label>
+            </div>
+          <div id="filePreview" class="file-preview"></div>
+        </div>
+        <div class="form-item">
+          <input type="checkbox" name="checkbox" checked class="checkbox-input _req" id="formCheckbox"/>
+          <label for="formCheckbox" class="checkbox-label">I give my consent to the processing of personal data in accordance with the Terms</label>
+        </div>
+        <div class="form-item">
+          <input type="submit" class="form-button" value="SEND"/>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/modalWindow/base.js"></script>
+  <script src="js/modalWindow/Plugins/modal.js"></script>
+  <script src="js/modalWindow/Plugins/confirm.js"></script>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
