@@ -2,5 +2,5 @@
 
 https://papiyan98.github.io/form/
 
-Form validation in main.js
-Using modal windows
++ Form validation in main.js
++ Using modal windows
